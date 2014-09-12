@@ -50,7 +50,7 @@
           data: {
             config: config,
             environment: target,
-            version: JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'))).version
+            version: JSON.parse(require('js').readFileSync(path.join(process.cwd(), 'package.json'))).version
           }
         },
         dist: {
