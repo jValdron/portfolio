@@ -1,0 +1,14 @@
+{
+  "name": "kwicks",
+  "homepage": "https://github.com/jmar777/kwicks",
+  "version": "2.2.1",
+  "_release": "2.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.2.1",
+    "commit": "24490e91074300df83d9c48d1ba7701d823db5ad"
+  },
+  "_source": "git://github.com/jmar777/kwicks.git",
+  "_target": "v2.2.1",
+  "_originalSource": "git://github.com/jmar777/kwicks"
+}
