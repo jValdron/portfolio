@@ -181,13 +181,13 @@
           },
           files: [{
             cwd: 'dist/',
-            dest: 'api/',
+            dest: '/',
             action: 'delete'
           }, {
             expand: true,
             cwd: 'dist/',
             src: [ '**/*' ],
-            dest: 'api/',
+            dest: '/',
             action: 'upload'
           }]
         }
