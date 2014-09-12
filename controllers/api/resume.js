@@ -62,6 +62,8 @@
                 items[entry.type].push(entry);
               });
 
+              console.log(entries, items);
+
               return done();
 
             });
