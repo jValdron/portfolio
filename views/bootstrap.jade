@@ -37,7 +37,7 @@ html(lang='en' ng-app='valdronApp')
 
           li.dropdown
             a.dropdown-toggle(href='#' ng-class='{ active: currentPage === \'about-me\' || currentPage === \'about-portfolio\' }' data-toggle='dropdown' ng-click='$event.preventDefault();')
-              | About 
+              | {{'about' | t}} 
               span.caret
             ul.dropdown-menu(role='menu')
               li: a(href='#/about/me') {{'contact.name' | t}}

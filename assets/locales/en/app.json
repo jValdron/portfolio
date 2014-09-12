@@ -46,6 +46,8 @@
     "references-content": "Available upon request."
   },
 
+  "about": "About",
+
   "about-me": {
     "title": "$t(about-me.name) - $t(title)",
     "name": "About Me",
