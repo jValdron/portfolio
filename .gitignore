@@ -1,0 +1,10 @@
+assets/js/vendors
+config/production.js
+dist
+log
+node_modules
+public/css
+public/js
+public/locales
+npm-debug.log
+tasks

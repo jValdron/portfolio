@@ -1,0 +1,63 @@
+doctype html
+html(lang='en' ng-app='valdronApp')
+  head
+    title Valdron.ca
+
+    base(href='/')
+
+    link(rel='stylesheet' href=config.url.cdn + 'css/valdron.css')
+    link(rel='stylesheet' href=config.url.cdn + 'css/printable.css' media='print')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lobster:400')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700')
+
+    link(rel='shortcut icon' type='image/x-icon' href=config.url.cdn + 'img/favicon.ico')
+    link(rel='shortcut icon' type='image/png' href=config.url.cdn + 'img/favicon.png')
+
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+  body(ng-class='currentPage')
+
+    header.navbar.navbar-fixed-top(role='navigation')
+      .navbar-header
+        button.navbar-toggle.collapsed.btn(type='button' data-toggle='collapse' data-target='.navbar-collapse')
+          .sr-only Toggle navigation
+          .icon-bar
+          .icon-bar
+          .icon-bar
+
+        h1
+          a(href='#') Valdron.ca
+
+      nav.collapse.navbar-collapse
+        ul.nav.navbar-nav
+
+          li: a(href='#/intro' ng-class='{ active: currentPage === \'intro\' }') {{'intro.name' | t}}
+
+          li: a(href='#/resume' ng-class='{ active: currentPage === \'resume\' }') {{'resume.name' | t}}
+
+          li.dropdown
+            a.dropdown-toggle(href='#' ng-class='{ active: currentPage === \'about-me\' || currentPage === \'about-portfolio\' }' data-toggle='dropdown' ng-click='$event.preventDefault();')
+              | About 
+              span.caret
+            ul.dropdown-menu(role='menu')
+              li: a(href='#/about/me') {{'contact.name' | t}}
+              li: a(href='#/about/portfolio') {{'about-portfolio.name' | t}}
+
+          li: a(href='#/projects' ng-class='{ active: currentPage === \'projects\' }') {{'projects.name' | t}}
+
+          li: a(href='#/experiences' ng-class='{ active: currentPage === \'experiences\' }') {{'experiences.name' | t}}
+
+          li
+            a.btn(href='https://www.github.com/jValdron/portfolio' rel='external')
+              img(src=config.url.cdn + 'img/github.png')
+              |  GitHub
+
+    #bg
+    #fade
+    #view.container(ng-view)
+
+    script(type='text/javascript' src=config.url.cdn + 'js/vendors.js')
+    script(type='text/javascript' src=config.url.cdn + 'js/valdron.js')
+
+    script(type='text/javascript').
+      var cdn = '#{config.url.cdn}';

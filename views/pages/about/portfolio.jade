@@ -1,0 +1,42 @@
+.row
+  .space-4
+
+  .col-lg-2.col-md-3.col-sm-4.col-lg-offset-1.col-md-offset-1.col-sm-offset-1.right-line
+    h3 {{'about-portfolio.source-files' | t}}
+    a.btn(href='http://www.github.com/jValdron/portfolio' rel='external')
+      img(src=config.url.cdn + 'img/github.png')
+      | {{'about-portfolio.available-github' | t}}
+
+    .space-2
+
+    h3 {{'about-portfolio.technologies' | t}}
+
+    h4 {{'about-portfolio.coding' | t}}
+    ul
+      li HTML 5
+      li CSS 3
+      li AngularJS
+      li Node.JS
+
+    h4 {{'about-portfolio.hosting' | t}}
+    ul
+      li Heroku
+      li GitHub
+      li Cloudfront
+
+    h4 {{'about-portfolio.design' | t}}
+    ul
+      li Illustrator CS6
+      li Photoshop CS6
+
+  .col-lg-8.col-md-7.col-sm-6
+    h2 {{'about-portfolio.name' | t}}
+
+    div(ng-bind-html='\'about-portfolio.content\' | t')
+
+    .space-8
+    a.next(href='#/projects')
+      img(src=config.url.cdn + 'img/chevron-right.png')
+      | {{'projects.name' | t}}
+
+  .clear

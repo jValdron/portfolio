@@ -1,0 +1,16 @@
+{
+  "name": "valdron",
+  "main": "server.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.x",
+    "angular-route": "1.x",
+    "angular-sanitize": "1.x",
+    "bootstrap": "3.x",
+    "i18next": "1.x",
+    "i18ng": "0.x",
+    "jquery": "1.x",
+    "kwicks": "git://github.com/jmar777/kwicks#v2.2.1",
+    "ngFitText": "2.x"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "title": "Valdron.ca",
+  "description": "Jason Valdron's Interactive Portfolio",
+
+  "meta": {
+    "description": "Jason Valdron's online interactive portfolio.",
+    "keywords": "portfolio, coding, developer, programming, node.js, html, css, web, application, resume, cv, about, jason valdron, valdron, design, creative"
+  },
+
+  "contact": {
+    "name": "Jason Valdron",
+    "phone": "(506) 470-7824",
+    "email": "jason@valdron.ca"
+  },
+
+  "languages": {
+    "en": "English",
+    "fr": "French"
+  },
+
+  "intro": {
+    "title": "Welcome to $t(title)",
+    "name": "Intro",
+    "content": "<p>I would like to welcome you to this unique interactive portfolio where you will find a list of my projects and past experiences.</p><p>My name is Jason Valdron and I've been fascinated by computers for over 17 years. I’m a bit of a jack of all trades, I know my way around application development, cloud computing, servers, electronics and many other things.</p><p>My area of expertise is web applications, I know my way around browser quirks, how to build an HTML/CSS integration of an existing design quickly and efficiently, create an efficient and responsive API/backend and how to manage applications on the cloud.</p>"
+  },
+
+  "resume": {
+    "title": "$t(resume.name) - $t(title)",
+    "name": "Resume",
+    "download-pdf": "Download as PDF",
+    "contact": "Contact Me",
+    "technical-skills": "Technical Skills",
+    "coding": "Coding",
+    "database": "Database",
+    "cloud": "Cloud",
+    "os": "Operating Systems",
+    "design": "Design",
+    "year": "yr",
+    "year_plural": "yrs",
+    "languages": "Languages",
+    "languages-content": "Fluent English and French, speaking and writing",
+    "work-experience": "Work Experience",
+    "education": "Education",
+    "community-experience": "Community Experience",
+    "references": "References",
+    "references-content": "Available upon request."
+  },
+
+  "about-me": {
+    "title": "$t(about-me.name) - $t(title)",
+    "name": "About Me",
+    "content": "<p>I have had a passion for computer programming since I was 10. At the age of four, I was already sitting at a computer playing around on BSS's and DOS. And by the time I was 10, I had already started doing BASIC coding.</p><p>After finding that I had an aptitude for programming. I started to design Web sites and soon realized I had found a niche in the field of software development.</p><p>Resourceful and independent, I am full of ideas and I strive to continuously learn and keep up to date with all technologies and standards.</p>",
+    "articles": "Articles About Me",
+    "contact": "Contact Me"
+  },
+
+  "about-portfolio": {
+    "title": "$t(about-portfolio.name) - $t(title)",
+    "name": "About Portfolio",
+    "content": "<p>This micro site has been coded and designed from scratch.</p><p>All the coding is done by hand using Sublime. The server side coding is done using Node.JS in a MVC structure and the client side coding is done using basic HTML5, CSS3 and AngularJS.</p><p>The source code for this micro site is hosted on GitHub and deployed to Heroku. All the frontend assets are hosted on Cloudfront.</p><p>Although coding is my primary interest, I fully enjoy the visual aspect of Web development. I have created this design in Illustrator, from scratch, then cut it using Photoshop.</p><p>Please note that this micro site has not been IE optimized.</p>",
+    "source-files": "Source Files",
+    "available-github": "Available on GitHub",
+    "technologies": "Technologies",
+    "coding": "Coding",
+    "hosting": "Hosting",
+    "design": "Design"
+  },
+
+  "experiences": {
+    "title": "$t(experiences.name) - $t(title)",
+    "name": "Life Experiences",
+    "content": "<p>Here are a few notable experiences in my life. Click on any of my life experiences to learn more. Each experience is in order from oldest to newest.</p>",
+    "about": "About",
+    "role": "Role / Involvement",
+    "victory": "Victory",
+    "back-to": "Back to Experiences"
+  },
+
+  "projects": {
+    "title": "$t(projects.name) - $t(title)",
+    "name": "Projects",
+    "content": "<p>Here you will find interesting projects that I've worked on at various places with all kind of people. The list is kept to a minimum as I've worked on more than 30 other projects as a freelancer.</p>",
+    "at": "at __employer__"
+  },
+
+  "error": {
+    "title": "Error - $t(title)"
+  },
+
+  "errors": {
+    "404": {
+      "name": "Oh no! Page not found!",
+      "content": "Sorry about that, but it looks like you've hit a link that doesn't exist anymore. If you believe this is a mistake, <a href=\"#/about/me\">contact me</a>."
+    }
+  }
+}

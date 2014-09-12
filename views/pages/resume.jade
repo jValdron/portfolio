@@ -1,0 +1,71 @@
+.row
+  .space-4
+
+  .col-lg-2.col-md-3.col-sm-4.col-xs-3.col-lg-offset-1.col-md-offset-1.col-sm-offset-1.right-line
+    #contact
+      p
+        strong {{'contact.name' | t}}
+        br
+        | {{'contact.phone' | t}}
+        br
+        a(href='mailto:{{\'contact.email\' | t}}') {{'contact.email' | t}}
+
+    .space-4
+
+    #skills
+      h3 {{'resume.technical-skills' | t}}
+      mixin skill(type)
+        h4 {{'resume.#{type}' | t}}
+        ul
+          li(ng-repeat='skill in resume.skills.' + type)
+            strong {{skill.name}}
+            |  {{skill.years}} {{'resume.year' | t:{'count': skill.years} }}
+
+      +skill('coding')
+      +skill('database')
+      +skill('cloud')
+      +skill('os')
+      +skill('design')
+
+  #resume.col-lg-8.col-md-7.col-sm-6.col-xs-9
+    a.pull-right.btn(href=config.url.cdn + 'resume.pdf' rel='external') 
+      img(src=config.url.cdn + 'img/download.png')
+      | {{'resume.download-pdf' | t}}
+    h2 {{'resume.name' | t}}
+    h3 {{'resume.languages' | t}}
+    p {{'resume.languages-content' | t}}
+
+    .space-2
+
+    mixin experience(type)
+      img.loader(src=config.url.cdn + 'img/loader.png' ng-if='!resume')
+      ul
+        li(ng-repeat='entry in resume.' + type)
+          strong.place {{entry.place}}
+          span.year-location {{entry.yearStart}}{{entry.yearStart === entry.yearEnd ? '' : ' - ' + entry.yearEnd}}, {{entry.location}}
+          div.title {{entry.title}}
+
+    h3 {{'resume.work-experience' | t}}
+    +experience('work')
+
+    .space-2
+
+    h3 {{'resume.education' | t}}
+    +experience('education')
+
+    .space-2
+
+    h3 {{'resume.community-experience' | t}}
+    +experience('community')
+
+    .space-2
+
+    h3 {{'resume.references' | t}}
+    p {{'resume.references-content' | t}}
+
+    .space-8
+    a.next(href='#/about/me')
+      img(src=config.url.cdn + 'img/chevron-right.png')
+      | {{'about-me.name' | t}}
+
+  .clear
