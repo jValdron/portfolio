@@ -8,7 +8,7 @@
   .clear
 
   .col-sm-8.col-sm-offset-1
-    img.loader(src=config.url.cdn + 'img/loader.png' ng-if='!experience')
+    img.loader(src=config.url.cdn + 'img/loader.png?v=' + version ng-if='!experience')
 
     div(ng-if='experience')
 
@@ -29,10 +29,10 @@
     .space-4
 
     a.btn(href='#/experiences')
-      img(src=config.url.cdn + 'img/chevron-left.png')
+      img(src=config.url.cdn + 'img/chevron-left.png?v=' + version)
       | {{'experiences.back-to' | t}}
 
   .col-sm-2
-    img.boxed(ng-src=config.url.cdn + 'img/experiences/{{experience.id}}.jpg')
+    img.boxed(ng-src=config.url.cdn + 'img/experiences/{{experience.id}}.jpg?v=' + version)
 
   .clear

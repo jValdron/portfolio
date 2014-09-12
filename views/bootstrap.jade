@@ -5,13 +5,13 @@ html(lang='en' ng-app='valdronApp')
 
     base(href='/')
 
-    link(rel='stylesheet' href=config.url.cdn + 'css/valdron.css')
-    link(rel='stylesheet' href=config.url.cdn + 'css/printable.css' media='print')
+    link(rel='stylesheet' href=config.url.cdn + 'css/valdron.css?v=' + version)
+    link(rel='stylesheet' href=config.url.cdn + 'css/printable.css?v=' + version media='print')
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lobster:400')
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700')
 
-    link(rel='shortcut icon' type='image/x-icon' href=config.url.cdn + 'img/favicon.ico')
-    link(rel='shortcut icon' type='image/png' href=config.url.cdn + 'img/favicon.png')
+    link(rel='shortcut icon' type='image/x-icon' href=config.url.cdn + 'img/favicon.ico?v=' + version)
+    link(rel='shortcut icon' type='image/png' href=config.url.cdn + 'img/favicon.png?v=' + version)
 
     meta(name='viewport' content='width=device-width, initial-scale=1')
 
@@ -49,15 +49,15 @@ html(lang='en' ng-app='valdronApp')
 
           li
             a.btn(href='https://www.github.com/jValdron/portfolio' rel='external')
-              img(src=config.url.cdn + 'img/github.png')
+              img(src=config.url.cdn + 'img/github.png?v=' + version)
               |  GitHub
 
     #bg
     #fade
     #view.container(ng-view)
 
-    script(type='text/javascript' src=config.url.cdn + 'js/vendors.js')
-    script(type='text/javascript' src=config.url.cdn + 'js/valdron.js')
+    script(type='text/javascript' src=config.url.cdn + 'js/vendors.js?v=' + version)
+    script(type='text/javascript' src=config.url.cdn + 'js/valdron.js?v=' + version)
 
     script(type='text/javascript').
-      var cdn = '#{config.url.cdn}';
+      var cdn = '#{config.url.cdn}', version = '#{version}';

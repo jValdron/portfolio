@@ -3,10 +3,10 @@
 
   .col-lg-2.col-md-3.col-sm-4.col-lg-offset-1.col-md-offset-1.col-sm-offset-1.right-line
     h3 {{'about-me.articles' | t}}
-    img.loader(src=config.url.cdn + 'img/loader.png' ng-if='!articles')
+    img.loader(src=config.url.cdn + 'img/loader.png?v=' + version ng-if='!articles')
     ul
       li(ng-repeat='article in articles')
-        a(href=config.url.cdn + 'article/{{article.id}}.pdf' rel='external')
+        a(href=config.url.cdn + 'article/{{article.id}}.pdf?v=' + version rel='external')
           strong.name {{article.title}}
           br
           span.language PDF - {{'languages.' + article.lang | t}}
@@ -28,7 +28,7 @@
 
     .space-8
     a.next(href='#/about/portfolio')
-      img(src=config.url.cdn + 'img/chevron-right.png')
+      img(src=config.url.cdn + 'img/chevron-right.png?v=' + version)
       | {{'about-portfolio.name' | t}}
 
   .clear

@@ -28,8 +28,8 @@
       +skill('design')
 
   #resume.col-lg-8.col-md-7.col-sm-6.col-xs-9
-    a.pull-right.btn(href=config.url.cdn + 'resume.pdf' rel='external') 
-      img(src=config.url.cdn + 'img/download.png')
+    a.pull-right.btn(href=config.url.cdn + 'resume.pdf?v=' + version rel='external') 
+      img(src=config.url.cdn + 'img/download.png?v=' + version)
       | {{'resume.download-pdf' | t}}
     h2 {{'resume.name' | t}}
     h3 {{'resume.languages' | t}}
@@ -38,7 +38,7 @@
     .space-2
 
     mixin experience(type)
-      img.loader(src=config.url.cdn + 'img/loader.png' ng-if='!resume')
+      img.loader(src=config.url.cdn + 'img/loader.png?v=' + version ng-if='!resume')
       ul
         li(ng-repeat='entry in resume.' + type)
           strong.place {{entry.place}}
@@ -65,7 +65,7 @@
 
     .space-8
     a.next(href='#/about/me')
-      img(src=config.url.cdn + 'img/chevron-right.png')
+      img(src=config.url.cdn + 'img/chevron-right.png?v=' + version)
       | {{'about-me.name' | t}}
 
   .clear

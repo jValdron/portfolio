@@ -48,8 +48,9 @@
       jade: {
         options: {
           data: {
+            config: config,
             environment: target,
-            config: config
+            version: JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'))).version
           }
         },
         dist: {

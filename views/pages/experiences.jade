@@ -6,12 +6,12 @@
 
     div(ng-bind-html='\'experiences.content\' | t')
 
-    img.loader(src=config.url.cdn + 'img/loader.png' ng-if='!experiences')
+    img.loader(src=config.url.cdn + 'img/loader.png?v=' + version ng-if='!experiences')
 
     ul#experiences(kwicks='experiences')
       li.blade(ng-repeat='experience in experiences')
         a(ng-href='/#/experience/{{experience.id}}')
-          img(ng-src=config.url.cdn + 'img/experiences/{{experience.id}}.jpg' width='200' height='500')
+          img(ng-src=config.url.cdn + 'img/experiences/{{experience.id}}.jpg?v=' + version width='200' height='500')
           .info
             strong.title {{experience.title}}
             .location {{experience.location}}
@@ -20,8 +20,8 @@
 
     .space-8
     a.next(href='http://www.github.com/jValdron/portfolio' rel='external')
-      img(src=config.url.cdn + 'img/chevron-right.png')
-      img(src=config.url.cdn + 'img/github.png')
+      img(src=config.url.cdn + 'img/chevron-right.png?v=' + version)
+      img(src=config.url.cdn + 'img/github.png?v=' + version)
       | GitHub
 
   .clear
