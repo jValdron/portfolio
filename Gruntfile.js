@@ -74,7 +74,7 @@
 
       uglify: {
         options: {
-          banner: '/*! Copyright © <%= grunt.template.today("yyyy") %> Dealer Instincts - <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+          banner: '/*! Copyright © <%= grunt.template.today("yyyy") %> valdron - <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n',
           sourceMap: true
         },
         dist: {
@@ -103,7 +103,7 @@
 
       cssmin: {
         options: {
-          banner: '/*! Copyright © <%= grunt.template.today("yyyy") %> Dealer Instincts - <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+          banner: '/*! Copyright © <%= grunt.template.today("yyyy") %> valdron - <%= pkg.name %> v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n',
           keepSpecialComments: 0
         },
         dist: {
