@@ -54,15 +54,13 @@
 
             // Get all of our resume items.
             ResumeItem.all({
-              order: 'type, yearStart DESC'
+              order: 'yearStart DESC'
             }, function(err, entries){
 
               // Push out the item in each types.
               entries.forEach(function(entry){
                 items[entry.type].push(entry);
               });
-
-              console.log(entries, items);
 
               return done();
 
