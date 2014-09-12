@@ -35,6 +35,13 @@
 
   }]);
 
+  app.config([ '$sceProvider', function($sceProvider){
+
+    // Remove strick contextual escaping support.
+    $sceProvider.enabled(false);
+
+  } ]);
+
   @import "controllers.js";
   @import "directives/kwicks.js";
   @import "routes.js";
