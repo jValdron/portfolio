@@ -26,7 +26,7 @@
       cookieName: 'valdron.i18n',
       fallbackLng: 'en',
       load: 'unspecific',
-      resGetPath: cdn + 'locales/__lng__/__ns__.json',
+      resGetPath: cdn + 'locales/__lng__/__ns__.json?v=' + version,
       ns: {
         namespaces: [ 'app' ],
         defaultNs: 'app'
