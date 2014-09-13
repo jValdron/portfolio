@@ -6,7 +6,7 @@
     img.loader(src=config.url.cdn + 'img/loader.png?v=' + version ng-if='!articles')
     ul
       li(ng-repeat='article in articles')
-        a(href=config.url.cdn + 'article/{{article.id}}.pdf?v=' + version rel='external')
+        a(href=config.url.cdn + 'articles/{{article.id}}.pdf?v=' + version rel='external')
           strong.name {{article.title}}
           br
           span.language PDF - {{'languages.' + article.lang | t}}
