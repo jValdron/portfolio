@@ -54,7 +54,7 @@
 
             // Get all of our resume items.
             ResumeItem.all({
-              order: 'yearStart DESC'
+              order: '"yearStart" DESC'
             }, function(err, entries){
 
               // Push out the item in each types.

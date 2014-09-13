@@ -16,6 +16,7 @@
     app.get('/views/*', function(req, res){
 
       var view = req.url.replace('/views/', '').replace('.html', '');
+      if (~view.indexOf('?')) view = view.substr(0, view.indexOf('?'))
       return res.render(view);
 
     });
