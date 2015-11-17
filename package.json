@@ -10,10 +10,10 @@
   "dependencies": {
     "async": "0.x",
     "body-parser": "1.x",
-    "caminte": "0.0.14",
+    "caminte": "0.x",
     "express": "4.x",
     "fs-extra": "0.x",
-    "jade": "1.6.x",
+    "jade": "1.x",
     "pg": "3.4.x",
     "serve-favicon": "2.x",
     "walk": "2.x",
