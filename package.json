@@ -13,7 +13,7 @@
     "caminte": "0.0.14",
     "express": "4.x",
     "fs-extra": "0.x",
-    "jade": "1.x",
+    "jade": "1.6.x",
     "pg": "3.4.x",
     "serve-favicon": "2.x",
     "walk": "2.x",
