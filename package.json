@@ -8,16 +8,16 @@
     "url": "http://github.com/jvaldron/portfolio.git"
   },
   "dependencies": {
-    "async": "0.x",
-    "body-parser": "1.x",
-    "caminte": "0.x",
-    "express": "4.x",
-    "fs-extra": "0.x",
-    "jade": "1.x",
-    "pg": "3.4.x",
-    "serve-favicon": "2.x",
-    "walk": "2.x",
-    "winston": "0.7.x"
+    "async": "~1.5.0",
+    "body-parser": "~1.14.1",
+    "caminte": "~0.0.33",
+    "express": "~4.13.3",
+    "fs-extra": "~0.26.2",
+    "jade": "~1.7.0",
+    "pg": "~4.4.3",
+    "serve-favicon": "~2.3.0",
+    "walk": "~2.3.9",
+    "winston": "~2.1.0"
   },
   "devDependencies": {
     "grunt": "0.4.x",
