@@ -40,7 +40,6 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "5.1.x",
-    "npm": "3.4.x"
+    "node": "6.11.x"
   }
 }
