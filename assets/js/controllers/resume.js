@@ -15,10 +15,10 @@
     $http({
       method: 'GET',
       url: '/api/resume'
-    }).success(function(data){
+    }).then(function(result){
 
       // Export our resume data to the scope.
-      $scope.resume = data;
+      $scope.resume = result.data;
 
     });
 

@@ -15,10 +15,10 @@
     $http({
       method: 'GET',
       url: '/api/articles'
-    }).success(function(data){
+    }).then(function(result){
 
       // Export our articles to the scope.
-      $scope.articles = data;
+      $scope.articles = result.data;
 
     });
 

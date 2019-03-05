@@ -15,10 +15,10 @@
     $http({
       method: 'GET',
       url: '/api/projects'
-    }).success(function(data){
+    }).then(function(result){
 
       // Export our projects to the scope.
-      $scope.projects = data;
+      $scope.projects = result.data;
 
     });
 

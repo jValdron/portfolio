@@ -26,26 +26,26 @@ html(lang='en' ng-app='valdronApp')
           .icon-bar
 
         h1
-          a(href='#') Valdron.ca
+          a(href='#!') Valdron.ca
 
       nav.collapse.navbar-collapse
         ul.nav.navbar-nav
 
-          li: a(href='#/intro' ng-class='{ active: currentPage === \'intro\' }') {{'intro.name' | t}}
+          li: a(href='#!/intro' ng-class='{ active: currentPage === \'intro\' }') Intro
 
-          li: a(href='#/resume' ng-class='{ active: currentPage === \'resume\' }') {{'resume.name' | t}}
+          li: a(href='#!/resume' ng-class='{ active: currentPage === \'resume\' }') Resume
 
           li.dropdown
             a.dropdown-toggle(href='#' ng-class='{ active: currentPage === \'about-me\' || currentPage === \'about-portfolio\' }' data-toggle='dropdown' ng-click='$event.preventDefault();')
-              | {{'about' | t}} 
+              | About
               span.caret
             ul.dropdown-menu(role='menu')
-              li: a(href='#/about/me') {{'contact.name' | t}}
-              li: a(href='#/about/portfolio') {{'about-portfolio.name' | t}}
+              li: a(href='#!/about/me') Contact
+              li: a(href='#!/about/portfolio') About Portfolio
 
-          li: a(href='#/projects' ng-class='{ active: currentPage === \'projects\' }') {{'projects.name' | t}}
+          li: a(href='#!/projects' ng-class='{ active: currentPage === \'projects\' }') Projects
 
-          li: a(href='#/experiences' ng-class='{ active: currentPage === \'experiences\' }') {{'experiences.name' | t}}
+          li: a(href='#!/experiences' ng-class='{ active: currentPage === \'experiences\' }') Experiences
 
           li
             a.btn(href='https://www.github.com/jValdron/portfolio' rel='external')

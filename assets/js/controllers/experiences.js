@@ -15,10 +15,10 @@
     $http({
       method: 'GET',
       url: '/api/experiences'
-    }).success(function(data){
+    }).then(function(result){
 
       // Export our experiences data to the scope.
-      $scope.experiences = data;
+      $scope.experiences = result.data;
 
     });
 
@@ -30,12 +30,12 @@
     $http({
       method: 'GET',
       url: '/api/experience/' + $routeParams.id
-    }).success(function(data){
+    }).then(function(result){
 
-      if (!data || data === 'null') return $location.path('experiences');
+      if (!result || !result.data || result.data === 'null') return $location.path('experiences');
 
       // Export our daitalled experience data to the scope.
-      $scope.experience = data;
+      $scope.experience = result.data;
 
     });
 
