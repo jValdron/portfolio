@@ -21,7 +21,7 @@
   "intro": {
     "title": "Welcome to $t(title)",
     "name": "Intro",
-    "content": "<p>I would like to welcome you to this unique interactive portfolio where you will find a list of my projects and past experiences.</p><p>My name is Jason Valdron and I've been fascinated by computers for over 17 years. I’m a bit of a jack of all trades, I know my way around application development, cloud computing, servers, electronics and many other things.</p><p>My area of expertise is web applications, I know my way around browser quirks, how to build an HTML/CSS integration of an existing design quickly and efficiently, create an efficient and responsive API/backend and how to manage applications on the cloud.</p>"
+    "content": "<p>I would like to welcome you to this unique interactive portfolio where you will find a list of my projects and past experiences.</p><p>My name is Jason Valdron and I've been fascinated by computers for over 17 years. I’m a bit of a jack of all trades, I know my way around application development, cloud computing, servers, electronics and many other things.</p><p>My area of expertise is web applications, I know my way around browser quirks, how to build an HTML/CSS integration of an existing design quickly and efficiently, create an efficient and responsive API/backend and how to manage applications on the cloud.</p><p>My passion lies in automating tasks all around me. From business needs, to home automation, if there is a way to make a process more efficient, you can bet I'll make it more efficient.</p>"
   },
 
   "resume": {

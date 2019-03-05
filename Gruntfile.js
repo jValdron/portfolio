@@ -45,7 +45,7 @@
         }
       },
 
-      jade: {
+      pug: {
         options: {
           data: {
             config: config,
@@ -56,7 +56,7 @@
         dist: {
           expand: true,
           cwd: 'views/',
-          src: [ '**/*.jade' ],
+          src: [ '**/*.pug' ],
           dest: 'tmp/pre-gzip/views/',
           ext: '.html'
         }
@@ -202,7 +202,7 @@
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-jade');
+    grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-import');
@@ -210,7 +210,7 @@
 
     var build = [
       'clean:dist',
-      'jade',
+      'pug',
       'jsonmin',
       'import',
       'uglify',

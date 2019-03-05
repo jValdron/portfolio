@@ -1,4 +1,4 @@
-assets/js/vendors
+assets/vendors
 config/production.js
 dist
 log
