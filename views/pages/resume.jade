@@ -42,7 +42,7 @@
       ul
         li(ng-repeat='entry in resume.' + type)
           strong.place {{entry.place}}
-          span.year-location {{entry.yearStart}}{{entry.yearStart === entry.yearEnd ? '' : ' - ' + entry.yearEnd}}, {{entry.location}}
+          span.year-location {{entry.yearStart}}{{entry.yearStart === entry.yearEnd ? '' : (entry.yearEnd ? ' - ' + entry.yearEnd : '')}}, {{entry.location}}
           div.title {{entry.title}}
 
     h3 {{'resume.work-experience' | t}}
