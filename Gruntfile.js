@@ -36,12 +36,7 @@
 
       'json-minify': {
         dist: {
-          files: [{
-            expand: true,
-            cwd: 'assets/locales/',
-            src: [ '**/*.json' ],
-            dest: 'tmp/pre-gzip/locales/'
-          }]
+          files: 'tmp/pre-gzip/locales/*.json'
         }
       },
 
@@ -124,6 +119,13 @@
       },
 
       copy: {
+
+        json: {
+          expand: true,
+          cwd: 'assets/locales/',
+          src: [ '**/*.json' ],
+          dest: 'tmp/pre-gzip/locales/'
+        },
 
         pdf: {
           expand: true,
@@ -211,6 +213,7 @@
     var build = [
       'clean:dist',
       'pug',
+      'copy:json',
       'json-minify',
       'import',
       'uglify',
