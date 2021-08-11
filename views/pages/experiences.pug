@@ -10,7 +10,7 @@
 
     ul#experiences(kwicks='experiences')
       li.blade(ng-repeat='experience in experiences')
-        a(ng-href='/#/experience/{{experience.id}}')
+        a(ng-href='/#!/experience/{{experience.id}}')
           img(ng-src=config.url.cdn + 'img/experiences/{{experience.id}}.jpg?v=' + version width='200' height='500')
           .info
             strong.title {{experience.title}}
