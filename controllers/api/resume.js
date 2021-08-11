@@ -1,7 +1,7 @@
 /**
  * resume.js
  * Returns the dynamic elements of the resume in JSON.
- * 
+ *
  * @author  Jason Valdron <jason@valdron.ca>
  * @package di-api
  */
@@ -36,6 +36,7 @@
 
         // Start out an object to store those items grouped by their types.
         var items = {
+          certification: [],
           community: [],
           education: [],
           skills: {
@@ -43,6 +44,7 @@
             coding: [],
             database: [],
             design: [],
+            devops: [],
             os: []
           },
           work: []

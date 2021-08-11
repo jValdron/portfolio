@@ -21,14 +21,15 @@
             strong {{skill.name}}
             |  {{skill.years}} {{'resume.year' | t:{'count': skill.years} }}
 
-      +skill('coding')
-      +skill('database')
+      +skill('devops')
       +skill('cloud')
       +skill('os')
+      +skill('coding')
+      +skill('database')
       +skill('design')
 
   #resume.col-lg-8.col-md-7.col-sm-6.col-xs-9
-    a.pull-right.btn(href=config.url.cdn + 'resume.pdf?v=' + version rel='external') 
+    a.pull-right.btn(href=config.url.cdn + 'resume.pdf?v=' + version rel='external')
       img(src=config.url.cdn + 'img/download.png?v=' + version)
       | {{'resume.download-pdf' | t}}
     h2 {{'resume.name' | t}}
@@ -41,12 +42,17 @@
       img.loader(src=config.url.cdn + 'img/loader.png?v=' + version ng-if='!resume')
       ul
         li(ng-repeat='entry in resume.' + type)
-          strong.place {{entry.place}}
-          span.year-location {{entry.yearStart}}{{entry.yearStart === entry.yearEnd ? '' : (entry.yearEnd ? ' - ' + entry.yearEnd : ' - current')}}, {{entry.location}}
-          div.title {{entry.title}}
+          strong.place {{entry.place ? entry.place : entry.title}}
+          span.year-location {{entry.yearStart}}{{entry.yearStart === entry.yearEnd ? '' : (entry.place ? (entry.yearEnd ? ' - ' + entry.yearEnd : ' - current') : '')}}{{entry.location ? ', ' + entry.location : ''}}
+          div.title(ng-if='entry.place') {{entry.title}}
 
     h3 {{'resume.work-experience' | t}}
     +experience('work')
+
+    .space-2
+
+    h3 {{'resume.certification' | t}}
+    +experience('certification')
 
     .space-2
 

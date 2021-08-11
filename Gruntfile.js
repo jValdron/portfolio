@@ -3,7 +3,7 @@
 /**
  * Gruntfile.js
  * Compress and uploads the stylesheets, scripts and images to Amazon S3.
- * 
+ *
  * @author  Jason Valdron <jason@valdron.ca>
  * @package portfolio
  */
@@ -34,7 +34,7 @@
         ]
       },
 
-      jsonmin: {
+      'json-minify': {
         dist: {
           files: [{
             expand: true,
@@ -206,12 +206,12 @@
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-import');
-    grunt.loadNpmTasks('grunt-jsonmin');
+    grunt.loadNpmTasks('grunt-json-minify');
 
     var build = [
       'clean:dist',
       'pug',
-      'jsonmin',
+      'json-minify',
       'import',
       'uglify',
       'less',

@@ -29,7 +29,7 @@
 
       });
 
-      ResumeItem.validatesInclusionOf('type', { in: [ 'work', 'education', 'community' ] });
+      ResumeItem.validatesInclusionOf('type', { in: [ 'work', 'education', 'community', 'certification' ] });
 
       return ResumeItem;
 
