@@ -1,6 +1,6 @@
 {
   "name": "valdron",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "Jason Valdron <jason@valdron.ca>",
   "description": "Jason Valdron's interactive portfolio",
   "repository": {
@@ -8,38 +8,38 @@
     "url": "http://github.com/jvaldron/portfolio.git"
   },
   "dependencies": {
-    "async": "~1.5.0",
-    "body-parser": "^1.18.3",
-    "caminte": "~0.0.33",
-    "express": "^4.16.4",
-    "fs-extra": "~0.26.2",
-    "pg": ">=4.5.7",
+    "async": "~3.2.4",
+    "body-parser": "^1.20.0",
+    "caminte": "~0.4.1",
+    "express": "^4.18.1",
+    "fs-extra": "~10.1.0",
+    "pg": ">=8.7.3",
     "pug": "^3.0.2",
     "serve-favicon": "^2.5.0",
-    "sqlite3": "^4.2.0",
-    "walk": "~2.3.9",
-    "winston": "~2.1.0"
+    "sqlite3": "^5.0.11",
+    "walk": "~2.3.15",
+    "winston": "~3.8.1"
   },
   "devDependencies": {
-    "grunt": "^1.0.3",
+    "grunt": "^1.5.3",
     "grunt-aws-s3": "^2.0.2",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-compress": "1.4.x",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-compress": "2.0.x",
     "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "3.0.x",
-    "grunt-contrib-imagemin": "^2.0.1",
-    "grunt-contrib-less": "2.0.x",
+    "grunt-contrib-cssmin": "4.0.x",
+    "grunt-contrib-imagemin": "^4.0.0",
+    "grunt-contrib-less": "3.0.x",
     "grunt-contrib-pug": "^3.0.0",
-    "grunt-contrib-uglify": "4.0.x",
+    "grunt-contrib-uglify": "5.2.x",
     "grunt-import": "^1.0.3",
     "grunt-json-minify": "^1.1.0",
     "less-middleware": "3.1.x",
-    "serve-static": "^1.13.2"
+    "serve-static": "^1.15.0"
   },
   "scripts": {
     "start": "node server.js"
   },
   "engines": {
-    "node": "v14.x"
+    "node": "v16.x"
   }
 }
