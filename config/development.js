@@ -1,7 +1,7 @@
 /**
  * development.js
  * Provides development specific configurations.
- * 
+ *
  * @author  Jason Valdron <jason@valdron.ca>
  * @package valdron
  */
@@ -27,7 +27,7 @@
         cdn: '/'
       },
 
-      // AWS connection settings, not required on dev, but on production. This 
+      // AWS connection settings, not required on dev, but on production. This
       // is required to deploy to the S3 bucket that is configured with Cloudfront.
       aws: {
         key: null,
